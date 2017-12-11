@@ -10,6 +10,8 @@
 
 ---?include=slides/aws-ec2.md
 
+---?include=slides/aws-iam.md
+
 ---?include=slides/sources.md
 
 ---?include=slides/questions.md
