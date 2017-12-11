@@ -31,6 +31,11 @@ The SOA record stores information about;
 - The name of the server that supplied the data for the zone.
 - The administrator of the zone.
 - The current version of the data file.
+
+#VSLIDE
+
+### SOA Records
+
 - The number of seconds a secondary name server should wait before checking for updates.
 - The number of seconds a secondary name server should wait before retrying a failed zone transfer.
 - The maximum number of seconds that a secondary name server can use data before it must either be refreshed or expire.

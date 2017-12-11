@@ -16,7 +16,6 @@
 - Granular permission
 - Identity Federation (including Active Directory, Facebook, Linkedin)
 - Multi-factor Authentication
-- Provide temporary access for users/devices and services where necessary
 - Allows you to set up your own password rotation policy
 - Integrates with many different AWS services
 
