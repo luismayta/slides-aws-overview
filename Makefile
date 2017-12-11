@@ -23,7 +23,6 @@ MESSAGE:=༼ つ ◕_◕ ༽つ
 MESSAGE_HAPPY:="${MESSAGE} Happy Coding"
 SOURCE_DIR=$(ROOT_DIR)/
 REQUIREMENTS_DIR=$(ROOT_DIR)/requirements/
-FILE_README=$(ROOT_DIR)/README.rst
 
 include *.mk
 
@@ -35,6 +34,7 @@ help:
 	@echo '    install                   install dependences python by env'
 	@echo '    clean                     remove files of build'
 	@echo '    setup                     install requirements'
+	@echo ''
 	@make docker.help
 	@make docs.help
 	@make test.help

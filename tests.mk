@@ -2,7 +2,7 @@
 # See ./CONTRIBUTING.rst
 #
 
-test.help:  clean
+test.help:
 	@echo '    Tests:'
 	@echo ''
 	@echo '        test                       Run all test'

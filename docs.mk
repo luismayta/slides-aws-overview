@@ -2,7 +2,9 @@
 # See ./CONTRIBUTING.rst
 #
 
-docs.help: clean
+FILE_README=$(ROOT_DIR)/README.rst
+
+docs.help:
 	@echo '    Docs:'
 	@echo ''
 	@echo '        docs.show                  Show restview README'
