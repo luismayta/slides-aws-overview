@@ -6,6 +6,8 @@
 
 ---?include=slides/agenda.md
 
+---?include=slides/cloud-computing.md
+
 ---?include=slides/home.md
 
 ---?include=slides/aws-ec2.md
