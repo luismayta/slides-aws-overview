@@ -12,6 +12,8 @@
 
 ---?include=slides/aws-iam.md
 
+---?include=slides/aws-route53.md
+
 ---?include=slides/sources.md
 
 ---?include=slides/questions.md
