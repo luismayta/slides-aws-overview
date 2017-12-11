@@ -82,10 +82,10 @@
 - Can be purchased as a reservation for up to 70% off the on-demand price.
 
 
----?include=slides/ec2/ebs.md
+---?include=/slides/ec2/ebs.md
 
----?include=slides/ec2/securitygroup.md
+---?include=/slides/ec2/securitygroup.md
 
----?include=slides/ec2/efs.md
+---?include=/slides/ec2/efs.md
 
----?include=slides/ec2/loadbalancer.md
+---?include=/slides/ec2/loadbalancer.md
