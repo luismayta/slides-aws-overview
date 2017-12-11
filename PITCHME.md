@@ -16,6 +16,18 @@
 
 ---?include=slides/aws-s3.md
 
+---?include=slides/aws-cloudfront.md
+
+---?include=slides/aws-rds.md
+
+---?include=slides/aws-lambda.md
+
+---?include=slides/aws-elastic-cache.md
+
+---?include=slides/aws-elastic-search.md
+
+---?include=slides/aws-cloud-search.md
+
 ---?include=slides/sources.md
 
 ---?include=slides/questions.md
