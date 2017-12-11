@@ -41,7 +41,12 @@
 ### EC2 - Spot
 
 - enable you to bid whatever price you want for instance capacity, providing for even greater savings if your applications have flexible start and end times.
-- Dedicated Hosts - Physical EC2 server dedicated for you use, Dedicated Hosts can help you reduce costs by allowing  you to use your existing server-bound software licenses.
+
+#VSLIDE
+
+### EC2 - Dedicated Hosts
+
+- Physical EC2 server dedicated for you use, Dedicated Hosts can help you reduce costs by allowing  you to use your existing server-bound software licenses.
 
 #VSLIDE
 
