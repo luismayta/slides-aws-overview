@@ -24,9 +24,23 @@
 
 ### EC2 - Options
 
-- On Demand - Allow you to pay a fixed rate by the hour (or by the second) with no commitment.
-- Reserved - provide you with a capacity reservation, and offer a significant discount on the hourly charge for a instance. 1 year or 3 year terms.
-- Spot - enable you to bid whatever price you want for instance capacity, providing for even greater savings if your applications have flexible start and end times.
+#VSLIDE
+
+### EC2 - On Demand
+
+- Allow you to pay a fixed rate by the hour (or by the second) with no commitment.
+
+#VSLIDE
+
+### EC2 - Reserved
+
+- provide you with a capacity reservation, and offer a significant discount on the hourly charge for a instance. 1 year or 3 year terms.
+
+#VSLIDE
+
+### EC2 - Spot
+
+- enable you to bid whatever price you want for instance capacity, providing for even greater savings if your applications have flexible start and end times.
 - Dedicated Hosts - Physical EC2 server dedicated for you use, Dedicated Hosts can help you reduce costs by allowing  you to use your existing server-bound software licenses.
 
 #VSLIDE
