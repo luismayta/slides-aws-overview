@@ -8,8 +8,7 @@
 
 ### Que es AWS?
 
-- Sistema de Control de Versiones Open Source
-- plataforma de servicios de nube que ofrece potencia de cómputo,
+- plataforma de servicios de nube que ofrece potencia de cómputo a demanda.
 
 
 #VSLIDE
@@ -18,8 +17,5 @@
 ### Jeff Bezos
 
 
-![Author](assets/images/author.jpg)
-
-#VSLIDE
-
+![Author](assets/images/creator.jpg)
 
