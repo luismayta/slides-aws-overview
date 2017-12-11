@@ -81,6 +81,7 @@
 - Can be purchased on-demand (hourly.)
 - Can be purchased as a reservation for up to 70% off the on-demand price.
 
+#HSLIDE
 
 ---?include=/slides/ec2/ebs.md
 
