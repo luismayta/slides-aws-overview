@@ -81,23 +81,6 @@
 - Can be purchased on-demand (hourly.)
 - Can be purchased as a reservation for up to 70% off the on-demand price.
 
-#VSLIDE
-
-### Instance Types
-
-| Family        | Speciality                                    | Use case                                |
-| ------------- | :-------------:                               | -----:                                  |
-| D2            | Dense Storage                                 | Fileservers/Data Warehousing/Hadoop     |
-| R4            | Memory Optimized                              | Memory intensive Apps/DBs               |
-| M4            | General Purpose                               | Application Servers                     |
-| C4            | Compute Optimized                             | CPU Intensive Apps/DBs                  |
-| G2            | Graphics Intensive                            | Video Encoding/3D Application Streaming |
-| I2            | High Speed Storage                            | NoSQL DBs, Data Warehousing, etc        |
-| F1            | Field Programable Gate Array                  | Hardware Acceleration for you code.     |
-| T2            | Lowest Cost, General Purpose                  | Web Servers, Small DBs                  |
-| P2            | Graphics/General Purpose GPU  | Machine Learning, Bit Coin Mining, etc                 |
-| X1            | Memory Optimized                              | SAP Hana/Apache Spark/etc                                        |
-
 
 ---?include=slides/ec2/ebs.md
 

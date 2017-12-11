@@ -1,6 +1,5 @@
 ### AWS IAM - Identity Access Management
 
-
 #VSLIDE
 
 ### Identity Access Management
