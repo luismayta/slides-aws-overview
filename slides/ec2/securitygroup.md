@@ -22,6 +22,11 @@ Traffic Egress
 - All Outbound Traffic is Allowed.
 - Changes to Security Groups take effect immediately. 
 - You can have any number EC2 Instances within a security group.
+
+#VSLIDE
+
+### Security Group Lab
+
 - you can have multiple security group groups attached EC2 Instances.
 - Security Groups are STATEFUL.
   * if you create an inbound rule allowing traffic in, that traffic is allowed back out again.
