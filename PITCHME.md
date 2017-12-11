@@ -12,6 +12,14 @@
 
 ---?include=slides/aws-ec2.md
 
+---?include=slides/ec2/ebs.md
+
+---?include=slides/ec2/securitygroup.md
+
+---?include=slides/ec2/efs.md
+
+---?include=slides/ec2/loadbalancer.md
+
 ---?include=slides/aws-iam.md
 
 ---?include=slides/aws-route53.md
