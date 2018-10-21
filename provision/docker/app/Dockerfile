@@ -1,18 +1,14 @@
-FROM python:3.6.1
+FROM python:3.6.4-alpine
 
 MAINTAINER Luis Mayta <@slovacus>
 
-LABEL NAME slides-aws-overview
-LABEL VERSION 0.0.0
+LABEL NAME slides-aws-overview-$stage
+LABEL VERSION $version
 
 COPY ./requirements/ /usr/src/requirements/
 COPY ./requirements.txt /usr/src/requirements.txt
 
-# set working directory to /app/
-WORKDIR /app/
+# set working directory to /usr/src/
+WORKDIR /usr/src/
 
-# install python dependencies
-RUN pip install -r /usr/src/requirements.txt
-
-# Define default command.
-CMD ["bash"]
+RUN pip install -r /usr/src/requirements/$stage.txt
