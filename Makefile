@@ -2,36 +2,37 @@
 # See ./CONTRIBUTING.rst
 #
 
-TAG :=""
-END :=""
-
+OS := $(shell uname)
 .PHONY: help build up requirements clean lint test help
 .DEFAULT_GOAL := help
 
-PROJECT_NAME := slides-aws-overview
-PROJECT_NAME_DEV := $(PROJECT_NAME)_dev
-PROJECT_NAME_STAGE := $(PROJECT_NAME)_stage
-PROJECT_NAME_TEST := $(PROJECT_NAME)_test
+PROJECT := slides-aws-overview
+PROJECT_PORT := 8000
 
-PYTHON_VERSION=3.6.1
-PYENV_NAME="${PROJECT_NAME}"
+PYTHON_VERSION=3.6.4
+PYENV_NAME="${PROJECT}"
 
 # Configuration.
 SHELL := /bin/bash
 ROOT_DIR=$(shell pwd)
-MESSAGE:=༼ つ ◕_◕ ༽つ
+MESSAGE:=🍺️
 MESSAGE_HAPPY:="${MESSAGE} Happy Coding"
 SOURCE_DIR=$(ROOT_DIR)/
-REQUIREMENTS_DIR=$(ROOT_DIR)/requirements/
+REQUIREMENTS_DIR=$(ROOT_DIR)/requirements
+PROVISION_DIR:=$(ROOT_DIR)/provision
+FILE_README:=$(ROOT_DIR)/README.rst
+PATH_DOCKER_COMPOSE:=provision/docker-compose
 
-include *.mk
+pip_install := pip install -r
+docker-compose:=docker-compose -f docker-compose.yml
+
+include extras/make/*.mk
 
 help:
-	@echo '${MESSAGE} Makefile for ${PROJECT_NAME}'
+	@echo '${MESSAGE} Makefile for ${PROJECT}'
 	@echo ''
 	@echo 'Usage:'
-	@echo '    environment               create environment with pyenv'
-	@echo '    install                   install dependences python by env'
+	@echo '    stage                     create stage with pyenv'
 	@echo '    clean                     remove files of build'
 	@echo '    setup                     install requirements'
 	@echo ''
@@ -41,29 +42,32 @@ help:
 
 clean:
 	@echo "$(TAG)"Cleaning up"$(END)"
-	@rm -rf .tox *.egg dist build .coverage
+ifneq (Darwin,$(OS))
+	@sudo rm -rf .tox *.egg *.egg-info dist build .coverage .eggs .mypy_cache
+	@sudo rm -rf docs/build
+	@sudo find . -name '__pycache__' -delete -print -o -name '*.pyc' -delete -print -o -name '*.pyo' -delete -print -o -name '*~' -delete -print -o -name '*.tmp' -delete -print
+else
+	@rm -rf .tox *.egg *.egg-info dist build .coverage .eggs .mypy_cache
 	@rm -rf docs/build
-	@find . -name '__pycache__' -delete -print -o -name '*.pyc' -delete -print -o -name '*.tmp' -delete -print
+	@find . -name '__pycache__' -delete -print -o -name '*.pyc' -delete -print -o -name '*.pyo' -delete -print -o -name '*~' -delete -print -o -name '*.tmp' -delete -print
+endif
 	@echo
 
 setup: clean
-	pip install -r "${REQUIREMENTS_DIR}/setup.txt"
+	$(pip_install) "${REQUIREMENTS_DIR}/setup.txt"
+	@if [ -e "${REQUIREMENTS_DIR}/private.txt" ]; then \
+			$(pip_install) "${REQUIREMENTS_DIR}/private.txt"; \
+	fi
 	pre-commit install
-	cp -rf extras/git/hooks/prepare-commit-msg .git/hooks/
-	cp -rf .env-sample .env
+	cp -rf .hooks/prepare-commit-msg .git/hooks/
+	@if [ ! -e ".env" ]; then \
+		cp -rf .env-sample .env;\
+	fi
 
 environment: clean
 	@if [ -e "$(HOME)/.pyenv" ]; then \
 		eval "$(pyenv init -)"; \
 		eval "$(pyenv virtualenv-init -)"; \
 	fi
-	pyenv virtualenv "${PYTHON_VERSION}" "${PYENV_NAME}" >> /dev/null 2>&1 || echo 'Oh Yeah!!'
-	pyenv activate "${PYENV_NAME}" >> /dev/null 2>&1 || echo 'Oh Yeah!!'
-
-install: clean
-	@echo $(MESSAGE) "Deployment environment: ${env}"
-	@if [ "${env}" == "" ]; then \
-		pip install -r requirements.txt; \
-	else \
-		pip install -r "${REQUIREMENTS_DIR}/${env}.txt"; \
-	fi
+	pyenv virtualenv "${PYTHON_VERSION}" "${PYENV_NAME}" >> /dev/null 2>&1 || echo $(MESSAGE_HAPPY)
+	pyenv activate "${PYENV_NAME}" >> /dev/null 2>&1 || echo $(MESSAGE_HAPPY)
