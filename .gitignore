@@ -33,7 +33,6 @@ eggs/
 .eggs/
 parts/
 sdist/
-var/
 *.egg-info/
 .installed.cfg
 *.egg
