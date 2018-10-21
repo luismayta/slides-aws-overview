@@ -8,22 +8,22 @@ services:
   app:
     environment: &environment
       - STAGE=local
-    image: slides-aws-overview-app-dev:0.1.0
+    image: slides-aws-overview-app-dev:0.1.1
     build:
       args:
         stage: dev
-        version: 0.1.0
+        version: 0.1.1
 
 
   check:
-    image: slides-aws-overview-check-dev:0.1.0
+    image: slides-aws-overview-check-dev:0.1.1
     environment: *environment
     build:
       context: .
       dockerfile: provision/docker/check/Dockerfile
       args:
         stage: dev
-        version: 0.1.0
+        version: 0.1.1
     volumes:
       - .:/usr/src
     env_file:

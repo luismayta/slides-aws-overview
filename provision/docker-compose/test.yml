@@ -7,12 +7,12 @@ version: '3'
 services:
 
   app:
-    image: slides-aws-overview-app-test:0.1.0
+    image: slides-aws-overview-app-test:0.1.1
     environment: &environment
       - STAGE=test
     build:
       args:
         stage: test
-        version: 0.1.0
+        version: 0.1.1
     volumes:
       - .:/usr/src
