@@ -1,5 +1,5 @@
 -   repo: https://github.com/pre-commit/pre-commit-hooks.git
-    sha: v1.1.1
+    sha: v2.0.0
     hooks:
     -   id: detect-private-key
         files: ^(?!\.?git-crypt)
@@ -14,7 +14,8 @@
     -   id: check-case-conflict
     -   id: check-json
     -   id: pretty-format-json
-        args: ['--autofix']
+        args:
+        - --autofix
     -   id: check-xml
         language_version: python3
     -   id: check-yaml
@@ -48,7 +49,7 @@
         - --exclude=docs,migrations
     -   id: check-executables-have-shebangs
 -   repo: https://github.com/pre-commit/mirrors-pylint.git
-    sha: v1.7.4
+    sha: v2.1.1
     hooks:
     -   id: pylint
         language_version: python3
@@ -58,23 +59,25 @@
         - --disable=no-name-in-module,import-error
         - --ignore=settings_test, migrations
 -   repo: https://github.com/pre-commit/pre-commit.git
-    sha: v1.4.1
+    sha: v1.11.2
     hooks:
     -   id: validate_manifest
--   repo: https://github.com/asottile/reorder_python_imports.git
-    sha: v0.3.5
+-   repo: git://github.com/FalconSocial/pre-commit-python-sorter
+    sha: 1.0.4
     hooks:
-    -   id: reorder-python-imports
+    -   id: python-import-sorter
+        args:
+        - --silent-overwrite
         language_version: python3
 -   repo: https://github.com/detailyang/pre-commit-shell.git
-    sha: 1.0.2
+    sha: 1.0.4
     hooks:
     -   id: shell-lint
         exclude: ^extras/script/wait-for-it.sh$
         args:
         - --exclude=SC1072,SC1073,SC2068
 -   repo: https://github.com/asottile/add-trailing-comma
-    sha: v0.6.4
+    sha: v0.7.1
     hooks:
     -   id: add-trailing-comma
 -   repo: https://github.com/Lucas-C/pre-commit-hooks-safety
@@ -98,10 +101,10 @@
     -   id: rst-linter
         exclude: (docs/*|tests/*)
 -   repo: https://github.com/asottile/pyupgrade
-    sha: v1.2.0
+    sha: v1.8.0
     hooks:
     -   id: pyupgrade
 -   repo: https://github.com/pricematch/pricematch-pre-commit-hooks
-    sha: 82b0c142b363547cc873bc6581fa3074087a37d2
+    sha: 93f5296d960021ee1f507a59a0bca1fe8f73c285
     hooks:
     -   id: do_not_commit
