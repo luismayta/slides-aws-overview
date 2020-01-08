@@ -13,7 +13,6 @@ dev:
 build:
   # The steps that will be executed on build
   steps:
-
     - add-ssh-key:
         keyname: GITHUB_KEY
         host: github.com
@@ -38,12 +37,11 @@ build:
     - script:
         name: Show vars env
         code: |
-            env
+          env
 
 # Testing definition
 test:
   steps:
-
     - add-ssh-key:
         keyname: GITHUB_KEY
         host: github.com
@@ -55,7 +53,7 @@ test:
     - script:
       name: Show vars env
       code: |
-          env
+        env
 
     - script:
         name: install shellcheck
@@ -74,7 +72,7 @@ test:
           make lint
 
     - script:
-        name: "Set environment variables"
+        name: 'Set environment variables'
         code: |
           export MY_VAR=you are happy
 
@@ -90,4 +88,4 @@ test:
     - script:
         name: Show vars env
         code: |
-            env
+          env

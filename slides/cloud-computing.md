@@ -4,7 +4,6 @@
 
 #VSLIDE
 
-
 ### Que es?
 
 - Consiste en la posibilidad de ofrecer servicios a traves de internet.
@@ -19,9 +18,7 @@
 - Ibm
 - …
 
-
 #VSLIDE
-
 
 ### Ventajas
 

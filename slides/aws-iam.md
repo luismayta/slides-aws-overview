@@ -25,10 +25,10 @@
 
 - Support PCI DSS Compliance
 - IAM consists of the following:
-  * Users
-  * Groups (A way to group our users and apply polices to them collectively)
-  * Roles
-  * Policy Documents
+  - Users
+  - Groups (A way to group our users and apply polices to them collectively)
+  - Roles
+  - Policy Documents
 - IAM is universal. It does not apply to regions at this time
 - The root account is simply the account created when first setup your AWS account. It has complete Admin access by default
 
@@ -41,7 +41,6 @@
 - These are not the same as a password, and you cannot use the Access KeyID & Secret Access Key to Login in to the console. You can use this to access AWS via the APIs and Command Line however
 - You only get to view these once. If you lose them, you have to regenerate them. So save them in a secure location.
 - Always setup Multi-factor Authentication on yur root account 19 You can create and customise your own password rotation policies
-
 
 #VSLIDE
 

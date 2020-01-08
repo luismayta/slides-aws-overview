@@ -4,7 +4,6 @@
 - It is Object based storage.
 - The data is spread across multiple devices and facilities.
 
-
 #VSLIDE
 
 ### The Basics
@@ -21,7 +20,7 @@
 ### The Basics
 
 - Built for 99.9% availability for the S3 platform
-- Amazon Guarantee 99.9% availabilityAmazon guarantees 99.99999999% durability for S3 information (11 * 9's)
+- Amazon Guarantee 99.9% availabilityAmazon guarantees 99.99999999% durability for S3 information (11 \* 9's)
 - Tiered Storage Available
 - Lifecycle Management
 - Versioning

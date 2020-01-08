@@ -2,7 +2,6 @@
 
 ![aws ec2](assets/images/aws-ec2.png)
 
-
 #VSLIDE
 
 ### EC2 - Elastic Compute Cloud
@@ -18,7 +17,6 @@
 
 - Changes the economics of computing by allowing you yo pay only for capacity that you actually use.
 - Provides developers the tools to build failure resilient Applications and isolate themselves from common failure scenarios.
-
 
 #VSLIDE
 
@@ -46,7 +44,7 @@
 
 ### EC2 - Dedicated Hosts
 
-- Physical EC2 server dedicated for you use, Dedicated Hosts can help you reduce costs by allowing  you to use your existing server-bound software licenses.
+- Physical EC2 server dedicated for you use, Dedicated Hosts can help you reduce costs by allowing you to use your existing server-bound software licenses.
 
 #VSLIDE
 
