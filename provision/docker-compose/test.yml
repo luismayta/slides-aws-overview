@@ -3,16 +3,12 @@
 #
 # Usage: test up
 
-version: '3'
+version: '3.6'
 services:
-
   app:
-    image: slides-aws-overview-app-test:0.1.1
+    image: slides-aws-overview-app-test
     environment: &environment
-      - STAGE=test
+      - STAGE=testing
     build:
       args:
         stage: test
-        version: 0.1.1
-    volumes:
-      - .:/usr/src

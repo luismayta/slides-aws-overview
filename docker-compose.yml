@@ -2,22 +2,15 @@
 # https://docs.docker.com/compose/
 # Usage: docker-compose up
 ---
-version: "3"
+version: '3.6'
+
 services:
-  # Python
   app:
     build:
       context: .
       dockerfile: provision/docker/app/Dockerfile
-    volumes:
-      - .:/usr/src
-    env_file:
-      - .env
-
-  docs:
-    build:
-      context: .
-      dockerfile: provision/docker/docs/Dockerfile
+    environment: &environment
+      - STAGE=dev
     volumes:
       - .:/usr/src
     env_file:
