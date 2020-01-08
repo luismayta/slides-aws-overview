@@ -1,134 +1,136 @@
-|gitpitch| |wercker| |build_status| |code_climate| |github_tag| |test_coverage| |license|
+slides-aws-overview
+===================
 
-:Version: 0.1.1
-:Web: https://github.com/luismayta/slides-aws-overview
-:Slide: https://gitpitch.com/luismayta/slides-aws-overview
-:Download: http://github.com/luismayta/slides-aws-overview
-:Source: http://github.com/luismayta/slides-aws-overview
+|Build Status| |GitHub issues| |GitHub license|
+
+:Version: 0.0.0
+:Web: https://github.com/equipindustry/slides-aws-overview
+:Download: https://github.com/equipindustry/slides-aws-overview
+:Source: https://github.com/equipindustry/slides-aws-overview
 :Keywords: slides-aws-overview
 
 .. contents:: Table of Contents:
     :local:
 
-slides-aws-overview
-###################
+Features
+--------
 
-Slides AWS
+* Task
 
-Usage
-=====
-
-Requirements
+Dependencies
 ------------
 
-* `python`_
-* `docker`_
-* `docker compose`_
+
+Installation
+------------
+
+Quick Start
+===========
+
+- Fork this repository
+
+Usage
+-----
+
+- Install dependences
 
 .. code-block:: bash
 
-  λ make setup
-  λ make docker.build
-  λ make docker.run service=app
+    λ make setup
 
-
-Actions
+Support
 -------
 
-Other commands for developing are written in Makefile:
+If you want to support this project, i only accept ``IOTA`` :p.
 
 .. code-block:: bash
 
-  λ make help
-  ༼ つ ◕_◕ ༽つ Makefile for slides-aws-overview
+    Address: FTDCZELEMOQGL9MBWFZENJLFIZUBGMXLFVPRB9HTWYDYPTFKASJCEGJMSAXUWDQC9SJUDMZVIQKACQEEYPEUYLAMMD
 
-  Usage:
-      environment               create environment with pyenv
-      install                   install dependences python by env
-      clean                     remove files of build
-      setup                     install requirements
 
-      Docker:
+Team
+----
 
-          docker.build         build all services with docker-compose
-          docker.down          down services docker-compose
-          docker.ssh           connect by ssh to container
-          docker.stop          stop services by env
-          docker.verify_network           verify network
-          docker.up             up services of docker-compose
-          docker.run            run {service} {env}
-          docker.list           list services of docker
++---------------+
+| |Luis Mayta|  |
++---------------+
+| `Luis Mayta`_ |
++---------------+
 
-      Docs:
+License
+-------
 
-          docs.show                  Show restview README
-          docs.make.html             Make documentation html
-
-      Tests:
-
-          test                       Run all test
-          test.lint                  Run all pre-commit
-          test.syntax                Run all syntax in code
-
+MIT
 
 Changelog
-=========
+---------
 
-* This project adheres to `Semantic Versioning <http://semver.org/spec/v2.0.0.html>`_
-* and `human-readable changelog <http://keepachangelog.com/en/0.3.0>`_.
-
-
-Please see `changelog`_ for more information what has changed recently.
+Please see `CHANGELOG`_ for more information what
+has changed recently.
 
 Contributing
-============
+------------
 
-Please see `contributing`_ for details.
+Contributions are welcome!
 
+Review the `CONTRIBUTING`_ for details on how to:
 
-Credits
-=======
+* Submit issues
+* Submit pull requests
 
-Made with :heart: :coffee:️and :pizza: by `company`_.
+Contact Info
+------------
 
-* `All Contributors`_
+Feel free to contact me to discuss any issues, questions, or comments.
 
-.. |code_climate| image:: https://codeclimate.com/github/luismayta/slides-aws-overview/badges/gpa.svg
-  :target: https://codeclimate.com/github/luismayta/slides-aws-overview
-  :alt: Code Climate
+* `Email`_
+* `Twitter`_
+* `GitHub`_
+* `LinkedIn`_
+* `Website`_
+* `PGP`_
 
-.. |github_tag| image:: https://img.shields.io/github/tag/luismayta/slides-aws-overview.svg?maxAge=2592000
-  :target: https://github.com/luismayta/slides-aws-overview
-  :alt: Github Tag
+|linkedin| |beacon| |made|
 
-.. |build_status| image:: https://travis-ci.org/luismayta/slides-aws-overview.svg
-  :target: https://travis-ci.org/luismayta/slides-aws-overview
-  :alt: Build Status Tag
-
-.. |wercker| image:: https://app.wercker.com/status/c0c2ac92f9f63cc9b21db828f1c8e695/s/ "wercker status"
-  :target: https://app.wercker.com/project/byKey/c0c2ac92f9f63cc9b21db828f1c8e695
-  :alt: Wercker status
-
-.. |gitpitch| image:: https://gitpitch.com/assets/badge.svg
-  :target: https://gitpitch.com/luismayta/slides-aws-overview?grs=github&t=white
-  :alt: GitPitch
-
-.. |license| image:: https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square
-  :target: LICENSE
-  :alt: License
-
-.. |test_coverage| image:: https://codeclimate.com/github/luismayta/slides-aws-overview/badges/coverage.svg
-  :target: https://codeclimate.com/github/luismayta/slides-aws-overview/coverage
-  :alt: Test Coverage
+Made with :coffee: and :pizza: by `luis mayta`_ and `equipindustry`_.
 
 .. Links
-
-.. _`all contributors`: AUTHORS.rst
 .. _`changelog`: CHANGELOG.rst
 .. _`contributors`: AUTHORS
-.. _`contributing`: CONTRIBUTING.rst
-.. _`company`: https://github.com/hadenlabs
-.. _`author`: https://github.com/luismayta
-.. _`python`: https://www.python.org
-.. _`docker`: https://www.docker.io
-.. _`docker compose`: https://docs.docker.com/compose
+.. _`contributing`: docs/source/CONTRIBUTING.rst
+
+.. _`equipindustry`: https://github.com/equipindustry
+.. _`luis mayta`: https://github.com/luismayta
+
+
+.. _`Github`: https://github.com/luismayta
+.. _`Linkedin`: https://www.linkedin.com/in/luismayta
+.. _`Email`: slovacus@gmail.com
+    :target: mailto:slovacus@gmail.com
+.. _`Twitter`: https://twitter.com/slovacus
+.. _`Website`: http://luismayta.github.io
+.. _`PGP`: https://keybase.io/luismayta/pgp_keys.asc
+
+.. |Build Status| image:: https://travis-ci.org/equipindustry/slides-aws-overview.svg
+    :target: https://travis-ci.org/equipindustry/slides-aws-overview
+.. |GitHub issues| image:: https://img.shields.io/github/issues/equipindustry/slides-aws-overview.svg
+    :target: https://github.com/equipindustry/slides-aws-overview/issues
+.. |GitHub license| image:: https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square
+    :target: LICENSE
+
+.. Team:
+.. |Luis Mayta| image:: https://github.com/luismayta.png?size=100
+    :target: https://github.com/luismayta
+
+.. Footer:
+.. |linkedin| image:: http://www.linkedin.com/img/webpromo/btn_liprofile_blue_80x15.png
+    :target: http://pe.linkedin.com/in/luismayta
+.. |beacon| image:: https://ga-beacon.appspot.com/UA-65019326-1/github.com/equipindustry/slides-aws-overview/readme
+    :target: https://github.com/equipindustry/slides-aws-overview
+.. |made| image:: https://img.shields.io/badge/Made%20with-Zsh-1f425f.svg
+    :target: http://www.zsh.org
+
+.. Dependences:
+
+.. _Pyenv: https://github.com/pyenv/pyenv
+.. _Docker: https://www.docker.com/
