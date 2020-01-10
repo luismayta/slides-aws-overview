@@ -3,18 +3,31 @@ import { Split, SplitRight } from 'mdx-deck';
 import prism from '@mdx-deck/themes/syntax-highlighter-prism';
 import aspect from '@mdx-deck/themes/aspect';
 import { Image, Box, Flex, Heading, Text } from 'rebass';
-import BGImage, ImageLG, ImageXL from './src/component'
+import {
+  BGImage,
+  ImageLarge,
+  ImageXL,
+} from './src/components/Images';
 
 import ImgAws from './assets/images/aws.png';
 import ImageUpgrade from './assets/images/mejorar.jpg';
 import ImageCloudComputing from './assets/images/cloud-computing.png';
 import ImageJeffBezos from './assets/images/creator.jpg';
+import ImageAWSEc2 from './assets/images/aws-ec2.png';
+import ImageQuestions from './assets/images/questions.jpg';
 
 export const themes = [book, prism, aspect];
-# AWS Overview
-<BGImage src={ImgAws} />
+
 ---
+
+# AWS Overview
+
+<BGImage src={ImgAws} />
+
+---
+
 ## No Tenemos Tiempo
+
 <BGImage src={ImageUpgrade} />
 
 ---
@@ -93,7 +106,7 @@ export const themes = [book, prism, aspect];
 
 # EC2 - Elastic Compute Cloud
 
-<BGImage src={'./assets/images/aws-ec2.png'} />
+<BGImage src={ImageAWSEc2} />
 
 ---
 
@@ -467,7 +480,7 @@ Alias are used to map resource record sets in you hosted zone to elastic load ba
 
 ## Questions?
 
-<BGImage src={'./assets/images/questions.jpg'} />
+<BGImage src={ImageQuestions} />
 
 ---
 
