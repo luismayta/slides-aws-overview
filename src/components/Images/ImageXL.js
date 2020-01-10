@@ -5,6 +5,4 @@ const IMG = styled.img`
   transform: scale(2);
 `;
 
-const ImageXL = ({ src }) => <IMG src={src} />;
-
-export default ImageXL;
+export const ImageXL = ({ src }) => <IMG src={src} />;
