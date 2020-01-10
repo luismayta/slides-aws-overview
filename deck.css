@@ -1,0 +1,19 @@
+@keyframes filters {
+  0% {
+    filter: hue-rotate(0deg);
+    -webkit-filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(3600deg);
+    -webkit-filter: hue-rotate(3600deg);
+  }
+}
+
+:root {
+  font-size: calc(1vw + 1vh + 0.5vmin) !important;
+}
+
+.react-live-preview + div {
+  width: 75%;
+  overflow: hidden;
+}
