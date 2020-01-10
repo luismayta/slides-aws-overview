@@ -1,3 +1,3 @@
-export * from './BGImage';
-export * from './ImageLarge';
-export * from './ImageXL';
+export { BGImage } from './BGImage';
+export { ImageLarge } from './ImageLarge';
+export { ImageXL } from './ImageXL';
