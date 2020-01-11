@@ -1,3 +1,5 @@
-import { book as theme } from 'mdx-deck/themes';
-
-export default theme;
+export default {
+  pre: {
+    fontSize: '.2em',
+  },
+};
