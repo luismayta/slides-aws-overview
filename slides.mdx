@@ -1,13 +1,9 @@
-import { book } from '@mdx-deck/themes';
-import { Split, SplitRight } from 'mdx-deck';
-import prism from '@mdx-deck/themes/syntax-highlighter-prism';
-import aspect from '@mdx-deck/themes/aspect';
-import { Image, Box, Flex, Heading, Text } from 'rebass';
-import {
-  BGImage,
-  ImageLarge,
-  ImageXL,
-} from './src/components/Images';
+import { Appear, Image, Notes } from 'mdx-deck';
+import { syntaxHighlighterPrism } from '@mdx-deck/themes';
+import customTheme from './src/theme';
+import 'antd/dist/antd.css';
+
+export const themes = [syntaxHighlighterPrism, customTheme];
 
 import ImgAws from './assets/images/aws.png';
 import ImageUpgrade from './assets/images/mejorar.jpg';
@@ -16,21 +12,15 @@ import ImageJeffBezos from './assets/images/creator.jpg';
 import ImageAWSEc2 from './assets/images/aws-ec2.png';
 import ImageQuestions from './assets/images/questions.jpg';
 
-import './deck.css';
-
-export const themes = [book, prism, aspect];
-
----
-
 # AWS Overview
 
-<BGImage src={ImgAws} />
+<Image src={ImgAws} />
 
 ---
 
 ## No Tenemos Tiempo
 
-<BGImage src={ImageUpgrade} />
+<Image src={ImageUpgrade} />
 
 ---
 
@@ -56,7 +46,7 @@ export const themes = [book, prism, aspect];
 
 ## Cloud Computing
 
-<BGImage src={ImageCloudComputing} />
+<Image src={ImageCloudComputing} />
 
 ---
 
@@ -90,7 +80,7 @@ export const themes = [book, prism, aspect];
 
 # Aws
 
-<BGImage src={ImageCloudComputing} />
+<Image src={ImageCloudComputing} />
 
 ---
 
@@ -102,13 +92,13 @@ export const themes = [book, prism, aspect];
 
 ### Jeff Bezos
 
-<BGImage src={ImageJeffBezos} />
+<Image src={ImageJeffBezos} />
 
 ---
 
 # EC2 - Elastic Compute Cloud
 
-<BGImage src={ImageAWSEc2} />
+<Image src={ImageAWSEc2} />
 
 ---
 
@@ -264,7 +254,7 @@ Traffic Egress
 
 Elastic Load Balancer to load balance the traffic these instances
 
-<BGImage src={'./assets/images/load-balancer.png'} />
+<Image src={'./assets/images/load-balancer.png'} />
 
 ---
 
@@ -482,7 +472,7 @@ Alias are used to map resource record sets in you hosted zone to elastic load ba
 
 ## Questions?
 
-<BGImage src={ImageQuestions} />
+<Image src={ImageQuestions} />
 
 ---
 
