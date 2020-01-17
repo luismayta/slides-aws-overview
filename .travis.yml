@@ -33,4 +33,4 @@ after_script:
   - git config user.email "${USER_EMAIL}"
   - git add .
   - git commit -m "Implement build for branch gh-pages"
-  - git push --force "git@${GH_REF}" develop:${GH_BRANCH} > /dev/null
+  - git push --force git@${GH_REF} develop:${GH_BRANCH} > /dev/null
