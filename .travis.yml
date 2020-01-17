@@ -1,9 +1,9 @@
 language: node_js
 node_js: stable
 
-branches:
-  only:
-    - develop
+# branches:
+#   only:
+#     - develop
 
 env:
   global:
