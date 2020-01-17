@@ -36,4 +36,4 @@ after_script:
   - git add .
   - git commit -m "Implement build for branch gh-pages"
   # - git push --force https://$GH_TOKEN@$GH_REF develop:$GH_BRANCH
-  - git push --force --quiet "https://${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git" gh-pages > /dev/null 2>&1
+  - git push --force --quiet "https://${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git" gh-pages:gh-pages
