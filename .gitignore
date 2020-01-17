@@ -181,3 +181,4 @@ venv.bak/
 requirements/private.txt
 .vscode
 *.orig
+public
