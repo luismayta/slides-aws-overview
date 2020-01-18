@@ -33,4 +33,4 @@ after_script:
   - git config user.email "${USER_EMAIL}"
   - git add .
   - git commit -m "Implement build for branch gh-pages"
-  - git push --force --quiet "https://${GH_TOKEN}@github.com/${GH_REF}.git" master:gh-pages
+  - git push --force --quiet "https://${GH_TOKEN}@github.com/${GH_REF}" master:gh-pages
