@@ -1,5 +1,3 @@
-import { prism } from 'mdx-deck/themes';
-
 import './index.css';
 
 const theme = {
@@ -11,4 +9,4 @@ const theme = {
   },
 };
 
-export const defaultThemes = [/* prism, */ theme];
+export const defaultThemes = [theme];
