@@ -4,7 +4,7 @@ slides-aws-overview
 |Build Status| |GitHub issues| |GitHub license|
 
 :Version: 0.0.0
-:Web: https://github.com/equipindustry/slides-aws-overview
+:Slide: https://equipindustry.github.io/slides-aws-overview
 :Download: https://github.com/equipindustry/slides-aws-overview
 :Source: https://github.com/equipindustry/slides-aws-overview
 :Keywords: slides-aws-overview
@@ -25,7 +25,7 @@ Installation
 ------------
 
 Quick Start
-===========
+-----------
 
 - Fork this repository
 
@@ -95,6 +95,7 @@ Feel free to contact me to discuss any issues, questions, or comments.
 Made with :coffee: and :pizza: by `luis mayta`_ and `equipindustry`_.
 
 .. Links
+
 .. _`changelog`: CHANGELOG.rst
 .. _`contributors`: AUTHORS
 .. _`contributing`: docs/source/CONTRIBUTING.rst
